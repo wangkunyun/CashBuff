@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="RoundImageView">
+        <attr name="type" />
+        <attr name="scale" />
+        <attr name="borderRadius" />
+        <attr name="top_left" />
+        <attr name="top_right" />
+        <attr name="bottom_left" />
+        <attr name="bottom_right" />
+    </declare-styleable>
+    <attr name="borderRadius" format="dimension" />
+    <attr name="type">
+        <enum name="circle" value="0" />
+        <enum name="round" value="1" />
+    </attr>
+    <attr name="scale">
+        <enum name="crop" value="0" />
+        <enum name="fit" value="1" />
+    </attr>
+    <attr name="top_left" format="boolean" />
+    <attr name="top_right" format="boolean" />
+    <attr name="bottom_left" format="boolean" />
+    <attr name="bottom_right" format="boolean" />
+
+    <declare-styleable name="LoadingView">
+        <attr name="loadding_color" format="color" />
+        <attr name="ring_style" format="enum">
+            <enum name="square" value="0" />
+            <enum name="round" value="1" />
+        </attr>
+        <attr name="progress_style" format="enum">
+            <enum name="material" value="0" />
+            <enum name="linear" value="1" />
+        </attr>
+
+        <attr name="ring_width" format="dimension" />
+        <attr name="ring_radius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="luckpan">
+        <attr name="pannum"  format="integer"/>
+        <attr name="names" format="reference"/>
+        <attr name="icons"  format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="Captcha">
+        <attr name="src" format="reference"/>
+        <attr name="progressDrawable" format="reference"/>
+        <attr name="thumbDrawable" format="reference"/>
+        <attr name="mode" format="enum">
+            <enum name="mode_bar" value="1"/>
+            <enum name="mode_nonbar" value="2"/>
+        </attr>
+        <attr name="max_fail_count" format="integer"/>
+        <attr name="blockSize" format="dimension"/>
+    </declare-styleable>
+</resources>

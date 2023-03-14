@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    android:orientation="vertical"
+    tools:context=".activity.FeedbackActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/blue">
+
+        <ImageView
+            android:id="@+id/click_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingHorizontal="20dp"
+            android:src="@mipmap/icon_finish" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Feedback"
+            android:textColor="#ffffffff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/et_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/bg_white_10"
+        android:gravity="top"
+        android:hint="Please enter feedback content"
+        android:minHeight="188dp"
+        android:padding="18dp"
+        android:textColor="#181818"
+        android:textColorHint="#181818"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/click_submit"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_blue_25"
+        android:gravity="center"
+        android:text="SUBMIT"
+        android:textColor="#ffffffff"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="42dp"
+            android:layout_marginBottom="30dp"
+            android:src="@mipmap/img_feedb" />
+
+
+    </RelativeLayout>
+</LinearLayout>

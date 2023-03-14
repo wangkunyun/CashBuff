@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    tools:context=".fragment.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="233dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@mipmap/img_bg_home" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:text="CashBuff"
+                android:textColor="#ffffffff"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="85dp"
+                android:text="the aximum amount of the loan is"
+                android:textColor="#ffffffff"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="₱"
+                    android:textColor="#ffffffff"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="5000,000"
+                    android:textColor="#ffffffff"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/click_apply"
+                android:layout_width="143dp"
+                android:layout_height="37.5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_white_18"
+                android:gravity="center"
+                android:text="GO apply"
+                android:textColor="#ff3a87e9"
+                android:textSize="19sp" />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:scrollbars="none"
+            android:id="@+id/reView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

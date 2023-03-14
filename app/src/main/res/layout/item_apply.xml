@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="5dp"
+    android:layout_marginTop="2dp"
+    android:background="@drawable/bg_white_10"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp">
+
+        <com.md.cfashsbugff.view.RoundImageView
+            android:id="@+id/img_personal_head"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_head"
+            app:borderRadius="5dp"
+            app:type="round" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="50dp"
+            android:text="Maucush Kreedit"
+            android:textColor="#ff333333"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/bg_blue_10"
+            android:gravity="center"
+            android:text="Apply"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₱ 50000"
+                android:textColor="#7066EB"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Max amount"
+                android:textColor="#656565"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="5dp"
+            android:background="#F5F5F5" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="≤0.1%"
+                android:textColor="#7066EB"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daily interest"
+                android:textColor="#656565"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="10dp"
+        android:background="#F5F5F5" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="15dp"
+        android:text="Loan whithin 2 hours"
+        android:textColor="#656565"
+        android:textSize="16sp" />
+</LinearLayout>

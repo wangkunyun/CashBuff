@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical"
+    tools:context=".fragment.MineFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#3A87E9"
+        android:gravity="center"
+        android:text="Mine"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/click_a"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:src="@mipmap/icon_mine1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="50dp"
+                android:text="Privacy Policy"
+                android:textColor="#ff000000"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:src="@mipmap/icon_enter_grey" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="#F5F5F5" />
+
+        <RelativeLayout
+            android:id="@+id/click_b"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:src="@mipmap/icon_mine2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="50dp"
+                android:text="Feedback"
+                android:textColor="#ff000000"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:src="@mipmap/icon_enter_grey" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/click_exit"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/bg_blue_25"
+            android:gravity="center"
+            android:text="EXIT"
+            android:textColor="#ffffffff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

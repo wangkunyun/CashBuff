@@ -3,13 +3,27 @@ plugins {
 }
 
 android {
-    compileSdkVersion 32
-    buildToolsVersion "33.0.0"
+    signingConfigs {
+        debug {
+            storeFile file('D:\\project_md\\CashBuff\\cash_buff.jks')
+            storePassword 'iB4kR1gI3aR8vQ6uM2'
+            keyPassword 'iB4kR1gI3aR8vQ6uM2'
+            keyAlias 'CashBuff'
+        }
+        release {
+            storeFile file('D:\\project_md\\CashBuff\\cash_buff.jks')
+            storePassword 'iB4kR1gI3aR8vQ6uM2'
+            keyPassword 'iB4kR1gI3aR8vQ6uM2'
+            keyAlias 'CashBuff'
+        }
+    }
+    compileSdkVersion 31
+    buildToolsVersion "30.0.0"
 
     defaultConfig {
-        applicationId "com.md.cashbuff"
-        minSdkVersion 16
-        targetSdkVersion 32
+        applicationId "com.md.cfashsbugff"
+        minSdkVersion 21
+        targetSdkVersion 31
         versionCode 1
         versionName "1.0"
 
@@ -30,10 +44,37 @@ android {
 
 dependencies {
 
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.8.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation 'junit:junit:4.+'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    //状态栏 基础依赖包，必须要依赖
+    implementation 'com.gyf.immersionbar:immersionbar:3.0.0'
+
+    //今日头条适配
+    implementation 'me.jessyan:autosize:1.2.1'
+
+    //一个强大的工具类库 相关功能请查看网址https://github.com/Blankj/AndroidUtilCode
+    implementation 'com.blankj:utilcodex:1.30.6'
+
+    //glide图片框架二次封装 https://github.com/libin7278/ImageLoader
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+
+    //万能适配 https://www.jianshu.com/p/1e20f301272e?tdsourcetag=s_pctim_aiomsg
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.50'
+
+    //BaseOkHttp V3 网络请求库
+    implementation 'com.github.kongzue:BaseOkHttpV3:3.2.4.2'
+
+    //BaseJson 解析库
+    implementation 'com.github.kongzue:BaseJson:1.0.7.2'
+    implementation "com.squareup.okhttp3:okhttp:4.9.1"
+
+    //AF https://dev.appsflyer.com/hc/docs/install-android-sdk
+    implementation 'com.appsflyer:af-android-sdk:6.9.0'
 }
